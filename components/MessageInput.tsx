@@ -1,4 +1,3 @@
-
 import React, { useState } from 'react';
 import { SendIcon } from './icons';
 
@@ -27,13 +26,13 @@ export const MessageInput: React.FC<MessageInputProps> = ({ onSendMessage, isLoa
                     onChange={(e) => setInput(e.target.value)}
                     placeholder="Escribe tu mensaje..."
                     disabled={isLoading}
-                    className="flex-grow p-3 border border-gray-300 rounded-full focus:outline-none focus:ring-2 focus:ring-brand-blue-500 disabled:bg-gray-100"
+                    className="flex-grow p-3 border border-gray-300 rounded-full focus:outline-none focus:ring-2 focus:ring-brand-green-500 disabled:bg-gray-100"
                     autoComplete="off"
                 />
                 <button
                     type="submit"
                     disabled={isLoading || !input.trim()}
-                    className="bg-brand-blue-600 text-white p-3 rounded-full hover:bg-brand-blue-700 focus:outline-none focus:ring-2 focus:ring-brand-blue-500 focus:ring-offset-2 disabled:bg-brand-blue-300 disabled:cursor-not-allowed transition-colors"
+                    className="bg-brand-green-600 text-white p-3 rounded-full hover:bg-brand-green-700 focus:outline-none focus:ring-2 focus:ring-brand-green-500 focus:ring-offset-2 disabled:bg-brand-green-300 disabled:cursor-not-allowed transition-colors"
                     aria-label="Enviar mensaje"
                 >
                     <SendIcon />
